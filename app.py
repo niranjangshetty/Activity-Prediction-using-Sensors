@@ -36,11 +36,12 @@ def main():
     input_data = [accf, accv, accl, ant_ID, rssi, rfid_e]
 
     if st.button('Predict'):
-        response = prediction(in_data)
+        response = prediction(input_data)
         st.success(response)
 
 if __name__=='__main__':
     main()
+
 
 
 
