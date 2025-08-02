@@ -1,4 +1,3 @@
-t
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -21,8 +20,7 @@ def prediction(input_list):
 
 def main():
     st.title('ACTIVITY PREDICTION FROM SENSOR DATA')
-    st.subheader('''This application will predict the ongoing activity on the basis of Sensor Data Provided. Fill the respective fields 
-    to get prediction.''')
+    st.subheader('''This application will predict the ongoing activity on the basis of Sensor Data Provided''')
     st.image('image.png')
 
     rfid = st.selectbox('Enter the RFID Configuration settings', ['Config 1 (4 Sensors)', 'Config 2 (3 Sensors)'])
@@ -43,5 +41,6 @@ def main():
 
 if __name__=='__main__':
     main()
+
 
 
