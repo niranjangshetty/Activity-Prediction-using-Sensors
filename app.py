@@ -26,7 +26,7 @@ def main():
     st.image('image.png')
 
     rfid = st.dropbox('Enter the RFID Configuration settings', ['Config 1 (4 Sensors)', 'Config 2 (3 Sensors)'])
-    rfid_e = (lambda x : return 3 if x == 'Config 2 (3 Sensors)' else 4)(rfid)
+    rfid_e = (lambda x: 3 if x == 'Config 2 (3 Sensors)' else 4)(rfid)
 
     ant_ID = st.dropbox('Select the Antenna ID', [1,2,3,4])
     rssi = st.text_input('Enter the recieved signal strength indicator (RSSI)')
@@ -43,3 +43,4 @@ def main():
 
 if __name__=='__main__':
     main()
+
